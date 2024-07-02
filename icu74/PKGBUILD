@@ -10,7 +10,15 @@ pkgname="${_pkgname}${_pkgmainver}"
 pkgver="${_pkgmainver}.${_pkgminorver}"
 pkgrel=6
 pkgdesc="International Components for Unicode library (legacy version ${_pkgmainver})."
-arch=(x86_64)
+arch=(
+  'i486'
+  'i686'
+  'pentium4'
+  'x86_64'
+  'armv6h'
+  'armv7h'
+  'aarch64'
+)
 url="http://www.icu-project.org/"
 license=('custom:icu')
 depends=(
